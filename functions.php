@@ -13,6 +13,7 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 	'phlash-govcentre'
 );
 
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
 // Set the branch that contains the stable release.
 $myUpdateChecker->setBranch( 'master' );
 
